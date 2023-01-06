@@ -17,3 +17,7 @@ use Inertia\Inertia;
 Route::get('/', function () {
     return Inertia::render('Home');
 });
+
+Route::get('/page2', function () {
+    return Inertia::render('Inner/Page');
+});
